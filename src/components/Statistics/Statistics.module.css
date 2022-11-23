@@ -1,0 +1,25 @@
+.stat_lis {
+  display: flex;
+  list-style: none;
+  width: 250px;
+  background-color: rgb(125, 125, 248);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-inline-start: 0;
+   gap: 20px;
+   justify-content: center;
+
+}
+
+.item {
+  border-color: black;
+  box-sizing: 2px;
+   text-align: center;
+
+ 
+}
+
+.label {
+  display: block;
+  text-align: center;
+}
