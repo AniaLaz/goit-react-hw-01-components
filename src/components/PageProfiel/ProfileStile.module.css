@@ -1,49 +1,63 @@
-.profile{
-     width: 250px;
+.profile {
+  width: 250px;
+  border: 1px solid rgba(138, 11, 11, 0.3);
+  border-radius: 2%;
+  overflow: hidden;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
 }
 
 .description {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
-.avatar{
-    background-color: rgb(174, 215, 235);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+.avatar {
+  background-color: rgb(174, 215, 235);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
 }
 
-.name{
-    font-size: 25px;
+.name {
+  font-size: 25px;
 }
 
-.tag{
-    color: gray;
+.tag {
+  color: gray;
 }
 
-.location{
-    color: gray;
+.location {
+  color: gray;
 }
 
-.stats{
-    display: flex;
-   list-style: none;
-   gap: 20px;
-   background-color: rgb(243, 232, 232);
-   border: 1px;
-   border-color: black;
- 
+.stats {
+  display: flex;
+  list-style: none;
+  padding-inline-start: 0px;
+  justify-content: center;
+  background-color: rgb(243, 232, 232);
+  border-top: 1px solid rgba(138, 11, 11, 0.3);
+  margin: 0;
+}
+.list {
+  width: calc(100% / 2);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.list:not(:last-child) {
+  border-right: 1px solid rgba(138, 11, 11, 0.3);
 }
 
-.label{
-     display: block;
-   text-align: center;
+.label {
+  display: block;
+  text-align: center;
+  color: gray;
 }
 
-.quantity{
-     display: block;
-     font-size: 20px;
-      text-align: center;
+.quantity {
+  display: block;
+  font-size: 18px;
+  text-align: center;
 }
