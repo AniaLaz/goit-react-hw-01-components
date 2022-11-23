@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 const FriendList = ({ friends }) => {
-  console.log('friends2', friends);
 
   return (
     <ul className="friend-list">

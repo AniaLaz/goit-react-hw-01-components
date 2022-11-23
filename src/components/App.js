@@ -4,8 +4,10 @@ import Statistics from './Statistics/Statistics'
 import data from 'data.json'
 import FriendList from './FriendList/FriendList'
 import friends from 'friends.json';
+import TransactionHistory from './TransactionHistory/TransactionHistory'
+import transactions from 'transactions.json';
 
-console.log('friends', friends);
+console.log('transactions', transactions);
 
 
 export default function App() {
@@ -22,6 +24,7 @@ export default function App() {
       />
       <Statistics title={data.title} stats={data} />
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 }
