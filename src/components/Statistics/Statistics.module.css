@@ -1,12 +1,27 @@
+.statistics {
+  width: 250px;
+  background-color: white;
+  text-align: center;
+  color: gray;
+}
+
 .stat_lis {
   display: flex;
   list-style: none;
-  width: 250px;
-  background-color: rgb(125, 125, 248);
+ 
   padding-inline-start: 0;
   justify-content: center;
   border-radius: 2%;
   overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .item {
@@ -17,6 +32,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
+   /* background-color: rgb(125, 125, 248); */
+
 }
 .item:not(:last-child) {
   border-right: 1px solid rgba(138, 11, 11, 0.3);
