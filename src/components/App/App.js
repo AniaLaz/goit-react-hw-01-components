@@ -8,16 +8,6 @@ import TransactionHistory from '../TransactionHistory/TransactionHistory';
 import transactions from 'transactions.json';
 import css from '../App/App.module.css'
 
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
-
-const color = getRandomHexColor();
-
-
-
 
 export default function App() {
   return (
@@ -31,7 +21,7 @@ export default function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Statistics title="Upload stats" stats={data} color={color} />
+      <Statistics title="Upload stats" stats={data} />
       <FriendListItem friends={friends} />
       <TransactionHistory items={transactions} />
     </div>
