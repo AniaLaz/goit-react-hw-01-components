@@ -2,7 +2,7 @@ import Profile from '../PageProfiel/Profile';
 import user from 'user.json';
 import Statistics from '../Statistics/Statistics';
 import data from 'data.json';
-import FriendList from '../FriendList/FriendList';
+import FriendListItem from '../FriendList/FriendListItem';
 import friends from 'friends.json';
 import TransactionHistory from '../TransactionHistory/TransactionHistory';
 import transactions from 'transactions.json';
@@ -31,8 +31,8 @@ export default function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Statistics title={data.title} stats={data} color={color} />
-      <FriendList friends={friends} />
+      <Statistics title="Upload stats" stats={data} color={color} />
+      <FriendListItem friends={friends} />
       <TransactionHistory items={transactions} />
     </div>
   );
