@@ -10,4 +10,8 @@ const FriendListItem = ({ friends }) => {
     );
 };
 
+FriendListItem.propTypes = {
+    friends: PropTypes.array
+}
+
 export default FriendListItem;

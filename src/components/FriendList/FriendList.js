@@ -6,27 +6,28 @@ import css from '../FriendList/FriendList.module.css';
 const FriendList = ({ friends }) => {
   return (
     <>
-      {friends.map(friend => (
-        <li className={css.item} key={friend.id}>
-          {friend.isOnline ? (
-            <div className={css.status} width="5" height="5"></div>
+      {friends.map(({id,isOnline,avatar,name }) => (
+        <li className={css.item} key={id}>
+          {isOnline ? (
+            <span className={css.status} width="5" height="5"></span>
           ) : (
-            <div className={css.isOnline} width="5" height="5"></div>
+            <span className={css.isOnline} width="5" height="5"></span>
           )}
 
           <img
             className={css.avatar}
-            src={friend.avatar}
+            src={avatar}
             alt="User avatar"
             width="20"
             height="20"
           />
-          <span>{friend.name}</span>
+          <span>{name}</span>
         </li>
       ))}
-</>
+    </>
   );
 };
+
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
